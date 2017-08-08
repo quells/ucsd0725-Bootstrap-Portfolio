@@ -2,58 +2,85 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<title>Kai Wells | Portfolio</title>
 	</head>
 	<body>
-		<header>
-			<div class="wrapper">
-				<h1><a href="index.html">Kai Wells</a></h1>
-				<span><a href="contact.html">Contact</a></span>
-				<span><a href="portfolio.html">Portfolio</a></span>
-				<span><a href="index.html">About</a></span>
-			</div>
-		</header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">Kai Wells</a>
+				</div>
 
-		<div id="content" class="wrapper">
-			<section>
-				<h2>Portfolio</h2>
-				<ul id="portfolio-projects">
-					<li><a href="https://github.com/quells/Squall">
-						<img src="assets/images/portfolio/squall.png" alt="Circle Packing">
-						<span>Squall</span>
-					</a></li>
-					<li><a href="https://github.com/quells/darksky-weather-alfred">
-						<img src="assets/images/portfolio/dark_sky.png" alt="Dark Sky Alfred Prompt">
-						<span>Dark Sky Alfred Workflow</span>
-					</a></li>
-					<li><a href="https://github.com/quells/pso.py">
-						<img src="assets/images/portfolio/pso.png" alt="Particle Swarm Optimization">
-						<span>Particle Swarm Optimization</span>
-					</a></li>
-					<li><a href="https://github.com/quells/go-neat">
-						<img src="assets/images/portfolio/neat.png" alt="XOR Network">
-						<span>Neuroevolution of Augmenting Topologies</span>
-					</a></li>
-					<li><a href="http://youcantcodewithus.github.io/KMCIslandGrowth/">
-						<img src="assets/images/portfolio/kmc_islands.png" alt="Kinetic Monte Carlo Island Growth">
-						<span>Kinetic Monte Carlo Simulation</span>
-					</a></li>
-					<li><a href="http://quells.github.io/QuantumWells/">
-						<img src="assets/images/portfolio/quantum_well.png" alt="Quantum Well">
-					<span>Quantum Well Simulations</span>
-					</a></li>
-					<div class="clear"></div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">About</a></li>
+					<li class="active"><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
-			</section>
-			<aside>
-				<h3>Connect with Me</h3>
-				<a href="https://github.com/quells/" target="_blank"><img src="assets/images/github.png" width="60" height="60" alt="GitHub" /></a>
-				<a href="https://linkedin.com/in/kai-wells/" target="_blank"><img src="assets/images/linkedin.png" width="60" height="60" alt="LinkedIn" /></a>
-				<a href="https://twitter.com/quells" target="_blank"><img src="assets/images/twitter.png" width="60" height="60" alt="Twitter" /></a>
-			</aside>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<section class="col-md-8 col-sm-12">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h2>Portfolio</h2>
+
+							<ul id="portfolio-projects" class="list-unstyled">
+								<li><a href="https://github.com/quells/Squall">
+									<img src="assets/images/portfolio/squall.png" alt="Circle Packing">
+									<span>Squall</span>
+								</a></li>
+								<li><a href="https://github.com/quells/darksky-weather-alfred">
+									<img src="assets/images/portfolio/dark_sky.png" alt="Dark Sky Alfred Prompt">
+									<span>Dark Sky Alfred Workflow</span>
+								</a></li>
+								<li><a href="https://github.com/quells/pso.py">
+									<img src="assets/images/portfolio/pso.png" alt="Particle Swarm Optimization">
+									<span>Particle Swarm Optimization</span>
+								</a></li>
+								<li><a href="https://github.com/quells/go-neat">
+									<img src="assets/images/portfolio/neat.png" alt="XOR Network">
+									<span>Neuroevolution of Augmenting Topologies</span>
+								</a></li>
+								<li><a href="http://youcantcodewithus.github.io/KMCIslandGrowth/">
+									<img src="assets/images/portfolio/kmc_islands.png" alt="Kinetic Monte Carlo Island Growth">
+									<span>Kinetic Monte Carlo Simulation</span>
+								</a></li>
+								<li><a href="http://quells.github.io/QuantumWells/">
+									<img src="assets/images/portfolio/quantum_well.png" alt="Quantum Well">
+								<span>Quantum Well Simulations</span>
+								</a></li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<aside class="col-md-4 col-sm-12">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h2>Connect with Me</h2>
+							<ul id="connect" class="list-unstyled">
+								<li><a href="https://github.com/quells/" target="_blank">
+									<img src="assets/images/github.png" width="60" height="60" alt="GitHub" />
+								</a></li>
+								<li><a href="https://linkedin.com/in/kai-wells/" target="_blank">
+									<img src="assets/images/linkedin.png" width="60" height="60" alt="LinkedIn" />
+								</a></li>
+								<li><a href="https://twitter.com/quells" target="_blank">
+									<img src="assets/images/twitter.png" width="60" height="60" alt="Twitter" />
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</aside>
+			</div>
 		</div>
 
-		<footer>
+		<footer class="text-center">
 			<small>&copy; <a href="copyright.txt" target="_blank">Copyright</a> 2017 Kai Wells</small>
 		</footer>
 	</body>
