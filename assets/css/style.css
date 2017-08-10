@@ -1,0 +1,140 @@
+/* Fonts and colors */
+
+a.navbar-brand, /* navbar name */
+h2 {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+	color: #4aaaa5; /* Teal */
+	font-size: 27px;
+	font-weight: bold;
+	padding: 0 0 10px;
+	margin: 0 0 10px 0;
+	border-bottom: 3px solid #ddd;
+}
+
+/* Nav bar */
+
+.navbar.navbar-default {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+	height: 90px;
+}
+
+.navbar-header {
+	padding-left: 15px;
+	height: 90px;
+}
+
+a.navbar-brand,
+a.navbar-brand:hover,
+a.navbar-brand:active,
+a.navbar-brand:focus,
+a.navbar-brand:visited {
+	background: #4aaaa5; /* Teal */
+	font-weight: bold;
+	color: #fff;
+	font-size: 30px;
+	padding: 35px 30px 0;
+	height: 90px;
+}
+
+ul.nav.navbar-nav.navbar-right {
+	padding-right: 15px;
+	margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+	.navbar.navbar-default {
+		height: inherit;
+	}
+
+	.navbar-header {
+		padding-left: 0;
+	}
+
+	a.navbar-brand {
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	ul.nav.navbar-nav.navbar-right {
+		padding-right: 0;
+		margin-top: inherit;
+	}
+}
+
+/* Content */
+
+h2 {
+	margin: 0 0 10px 0;
+}
+
+#portrait {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+@media (max-width: 767px) {
+	#portrait {
+		margin-bottom: 20px;
+	}
+
+	.lead {
+		font-size: 1.4em;
+	}
+}
+
+/* Connect */
+
+#connect {
+	text-align: center;
+}
+
+#connect li {
+	display: inline-block;
+	margin: auto 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#connect {
+		text-align: left;
+	}
+
+	#connect li {
+		margin: auto 5px;
+	}
+}
+
+/* Sticky footer */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 98px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 90px;
+	padding-top: 30px;
+	background: #666;
+	border-top: 8px solid #4aaaa5; /* Teal */
+	color: #ddd;
+}
+
+footer * a {
+	color: #ddd;
+	text-decoration: underline;
+}
