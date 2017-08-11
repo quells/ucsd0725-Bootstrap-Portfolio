@@ -1,5 +1,9 @@
 /* Fonts and colors */
 
+body {
+	background: #eee url("../images/geometry2.png") repeat fixed;
+}
+
 a.navbar-brand, /* navbar header */
 h2 {
 	font-family: Georgia, Times, 'Times New Roman', serif;
