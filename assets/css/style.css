@@ -1,6 +1,6 @@
 /* Fonts and colors */
 
-a.navbar-brand, /* navbar name */
+a.navbar-brand, /* navbar header */
 h2 {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 }
@@ -9,9 +9,16 @@ h2 {
 	color: #4aaaa5; /* Teal */
 	font-size: 27px;
 	font-weight: bold;
-	padding: 0 0 10px;
-	margin: 0 0 10px 0;
+	padding: 0 0 20px 0;
+	margin: 0 0 20px 0;
 	border-bottom: 3px solid #ddd;
+}
+
+@media (max-width: 767px) {
+	h2 {
+		padding: 0 0 10px 0;
+		margin: 0 0 10px 0;
+	}
 }
 
 /* Nav bar */
@@ -71,10 +78,6 @@ ul.nav.navbar-nav.navbar-right {
 
 /* Content */
 
-h2 {
-	margin: 0 0 10px 0;
-}
-
 #portrait {
 	max-width: 100%;
 	width: auto;
@@ -89,6 +92,44 @@ h2 {
 	.lead {
 		font-size: 1.4em;
 	}
+}
+
+/* Portfolio */
+
+.project {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.project a {
+	display: inline-block;
+	position: relative;
+}
+
+.project a,
+.project a:visited,
+.project a:hover,
+.project a:active,
+.project a:focus {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 1.2em;
+	color: white;
+}
+
+.project a span {
+	position: absolute;
+	text-align: center;
+	display: block;
+	bottom: 20px;
+	width: 100%;
+	padding: 1em 0;
+	background: #4aaaa5;
+	background: rgba(74, 170, 165, 0.9);
+}
+
+.project a:hover span {
+	background: #4aaaa5;
+	background: rgba(74, 170, 165, 1);
 }
 
 /* Connect */
